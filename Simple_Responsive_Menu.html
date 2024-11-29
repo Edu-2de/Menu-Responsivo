@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU</title>
+    <link rel="stylesheet" href ="menus.css">
+</head>
+<body>
+<header>
+
+
+  <!-- Aqui é a parte do logo, assim fizemos com a tag "a" que funciona para redirecionar links, mas nesse caso que é apenas um logo só para visualizacao, usamos o # ao inves de um link, ja que ele é so estetico -->
+
+  <a href="#" class="logo">LOGO</a>
+
+
+   <!-- E aqui fizemos a parte de abrir o menu, indentificando ele como uma (check-box), que acionara o comando de abrir as demais opces quando ele for precionado-->
+
+  <input type="checkbox" id="menu-bar">
+
+
+  <!-- A tag label serve para especificar qual o rotulo do input, e ajuda na experiência do usuário durante a utilização e preenchimento do formulário.-->
+
+
+  <label for="menu-bar">Menu</label>
+
+     
+
+
+
+  <!-- Logo, temos a tag nav, que serve para organizar os links de navegacao, seja eles levando a areas da mesma pagina, ou para outras paginas
+
+  Dentro dela temos a tag "ul" que é um tipo de lista nao ordenada que para seus topicos usamos o "li", onde dentro deles temos a tag "a" que armazena links, nesse caso todos os "a" estao vazioas (sem links)-->
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#">home</a></li>
+      <li><a href="#">about</a></li>
+      <li><a href="#">pages +</a>
+        <ul>
+          <li><a href="#">blogs</a></li>
+          <li><a href="#">services +</a>
+            <ul>
+              <li><a href="#">html</a></li>
+              <li><a href="#">css</a></li>
+              <li><a href="#">java</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#">review</a></li>
+      <li><a href="#">gallery +</a>
+        <ul>
+          <li><a href="#">gird gallery</a></li>
+          <li><a href="#">flex gallery</a></li>
+        </ul>
+      </li>
+      <li><a href="#">contact</a></li>
+    </ul>
+  </nav>
+
+
+ </header>
+
+
+</body>
+</html>
